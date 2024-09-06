@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Tabela IMC</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: left;">IMC</th>
+                    <th style="padding-left: 135px;">Resultado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left;">Menos do que 18,5</td>
+                    <td style="padding-left: 150px;">Abaixo do peso</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">Entre 18,5 e 24,9</td>
+                    <td style="padding-left: 150px;">Peso normal</td>
+                <tr>
+                    <td style="text-align: left;">Entre 25 e 29,9</td>
+                    <td style="padding-left: 150px;">Sobrepeso</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">Entre 30 e 34,9</td>
+                    <td style="padding-left: 150px;">Obsidade grau 1</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">Entre 35 e 39,9</td>
+                    <td style="padding-left: 150px;">Obsidade grau 2</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;">Mais do que 40</td>
+                    <td style="padding-left: 150px;">Obsidade grau 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form action="/" class="form" method="post">
+            <h1>Calcule seu IMC</h1>
+
+            <label for="input-teste-2">Peso</label>
+            <input for="text" class="peso">
+
+            <label for="input-teste-2">Altura</label>
+            <input for="text" class="altura">
+
+            <button>Calcular</button>
+        </form>
+        <div class="result-false"></div>
+        <div class="result-true"></div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
